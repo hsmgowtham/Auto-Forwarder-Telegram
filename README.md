@@ -41,7 +41,7 @@ pip install -r requirements.txt
 3. Set up your environment variables:
 
 Create a `.env` file and provide the following information:
-
+```
 API_ID=your_api_id
 API_HASH=your_api_hash
 PHONE_NUMBER=your_phone_number
@@ -49,7 +49,7 @@ MESSAGE_SINCE_HR=1
 CONTACT_ID_1=contact_chat_id_1
 CONTACT_ID_2=contact_chat_id_2
 CHANNEL_ID=channel_id
-
+```
 Replace the placeholders with your actual API credentials, phone number, message duration (in hours), contact chat IDs, and channel ID.
 
 4. Run the script:
