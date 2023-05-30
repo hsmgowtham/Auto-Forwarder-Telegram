@@ -12,9 +12,6 @@ API_HASH = environ.get("API_HASH")
 PHONE_NUMBER = environ.get("PHONE_NUMBER")
 MESSAGE_SINCE_HR = int(environ.get("MESSAGE_SINCE_HR"))
 
-CHANNEL_ID = None
-CONTACT_CHAT_IDS = []
-
 
 # Create a Telegram client
 client = TelegramClient("session", API_ID, API_HASH)
@@ -49,7 +46,7 @@ async def forward_messages():
                             contact_chat_id, message, from_peer=CHANNEL_ID
                         )
             with open("./logs.txt", "a") as file:
-                file.write(f"\n{datetime.now().strftime('%d/%m/%Y %H-%M-%S')} - Total Messages Forwarded in the last {MESSAGE_SINCE_HR} hr's = {message_forwarded_count}")
+                file.write(f"\n{datetime.now().strftime('%d/%m/%Y %H:%M:%S')} - Total Messages Forwarded in the last {MESSAGE_SINCE_HR} hr's = {message_forwarded_count}")
         else:
             print("No messages found in the last hour.")
 
