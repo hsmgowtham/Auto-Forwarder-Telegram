@@ -1,6 +1,8 @@
 # Telegram Message Forwarder
 
-A simple Python script that forwards messages from a Telegram channel to specified contacts within a given time range.
+A simple Python script that forwards messages from a Telegram channel to specified contacts within a given time range. 
+
+**Fun Fact**: I made This quick project when I couldn't add a friend to a telegram channel.
 
 ## Table of Contents
 
